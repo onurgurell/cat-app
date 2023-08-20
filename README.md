@@ -1,4 +1,4 @@
-# cat_app
+# CAT APP
 
 ## Screens
 ![Simulator Screen Shot - iPhone 14 Pro Max - 2023-08-20 at 21 01 31](https://github.com/onurgurell/cat-app/assets/69406005/42f770b1-389f-4a9b-9df2-ef42a901016b)
