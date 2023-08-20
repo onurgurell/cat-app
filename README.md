@@ -9,33 +9,41 @@
 
 ## Clean Architeture
 
-Data
+# Data
 
 The data layer is the outermost layer of the application and is responsible for communicating with the server-side or a local database and data management logic. It also contains repository implementations.
-Data Source
+
+# Data Source
 
 Explains the process of obtaining and updating data. It consists of Local Data Sources. SharedPreferences and Json will perform file requests. At the same time, local Data sources cache or persist data.
-Models
+
+# Models
 
 An entity will depend on the data acquired from the different data sources. Serialization of JSON structure into Dart maps Entity objects to Models.
 Repository Impl
 
 The connection between the Data layer and the Domain layer is established through repositories, which serve as actual implementations in the Domain layer. These repositories are responsible for bringing data from various sources together.
-Domain
+
+# Domain
 
 The domain layer is responsible for all the business logic. It is written purely in Dart without flutter elements because the domain should only be concerned with the business logic of the application, not with the implementation details.
-Repositories
+
+# Repositories
 
 Abstract classes that define the expected functionality of outer layers.
-Entities
+
+# Entities
 
 Business objects of the application.
-Use Cases
+
+# Use Cases
 
 Describes the logic processing required for the application. Communicates directly with the repositories.
-BLoc
+
+# BLoc
 
 Receive the events from the views and interact with use cases accordingly. Emit the state according to the data received from the use cases. Bloc does not know about the view at all. It communicates in the form of states and events only.
-Presentation
+
+# Presentation
 
 The presentation layer is the most framework-dependent layer. It is responsible for all the UI and handling the events in the UI. It does not contain any business logic.
